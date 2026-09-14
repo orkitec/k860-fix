@@ -1,541 +1,584 @@
 {
-  "title": "Logitech ERGO K860 hardware fault repair",
-  "rules": [
-    {
-      "description": "Logitech ERGO K860 - repair paired hardware faults",
-      "manipulators": [
+    "description": "Logitech ERGO K860 - repair paired hardware faults",
+    "manipulators": [
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "d"
-              },
-              {
-                "key_code": "keypad_slash"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "d"
+                    },
+                    {
+                        "key_code": "keypad_slash"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "d"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "3"
-              },
-              {
-                "key_code": "keypad_8"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "3"
+                    },
+                    {
+                        "key_code": "keypad_8"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "3"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "8"
-              },
-              {
-                "key_code": "keypad_hyphen"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "8"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "8"
+                    },
+                    {
+                        "key_code": "keypad_hyphen"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "8"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "y"
-              },
-              {
-                "key_code": "backslash"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "y"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "y"
+                    },
+                    {
+                        "key_code": "backslash"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "y"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "comma"
-              },
-              {
-                "key_code": "keypad_1"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "comma"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "comma"
+                    },
+                    {
+                        "key_code": "keypad_1"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "comma"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "tab"
-              },
-              {
-                "key_code": "page_up"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "tab"
+                    },
+                    {
+                        "key_code": "page_up"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "tab"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "t"
-              },
-              {
-                "consumer_key_code": "scan_previous_track"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "t"
+                    },
+                    {
+                        "consumer_key_code": "scan_previous_track"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "t"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "delete_forward"
-              },
-              {
-                "key_code": "keypad_asterisk"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_forward"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "delete_forward"
+                    },
+                    {
+                        "key_code": "keypad_asterisk"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "pointing_button": "button2"
-              },
-              {
-                "key_code": "b"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "pointing_button": "button2"
+                    },
+                    {
+                        "key_code": "b"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "b"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "b"
-              },
-              {
-                "key_code": "application"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "b"
+                    },
+                    {
+                        "key_code": "application"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "b"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "caps_lock"
-              },
-              {
-                "key_code": "f"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "caps_lock"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "caps_lock"
+                    },
+                    {
+                        "key_code": "f"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "caps_lock"
+                }
+            ],
+            "type": "basic"
         },
         {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "caps_lock"
-              },
-              {
-                "key_code": "f"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict"
-            },
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
+            "conditions": [
                 {
-                  "vendor_id": 1133,
-                  "product_id": 45913
-                },
-                {
-                  "vendor_id": 1133,
-                  "product_id": 50475
+                    "identifiers": [
+                        {
+                            "product_id": 45913,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50475,
+                            "vendor_id": 1133
+                        },
+                        {
+                            "product_id": 50504,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
                 }
-              ]
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 50
-          }
+            ],
+            "from": {
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                },
+                "simultaneous": [
+                    {
+                        "key_code": "caps_lock"
+                    },
+                    {
+                        "key_code": "f"
+                    }
+                ],
+                "simultaneous_options": {
+                    "key_down_order": "strict"
+                }
+            },
+            "parameters": {
+                "basic.simultaneous_threshold_milliseconds": 50
+            },
+            "to": [
+                {
+                    "key_code": "f"
+                }
+            ],
+            "type": "basic"
         }
-      ]
-    }
-  ]
+    ]
 }
